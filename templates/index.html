@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy</title>
+</head>
+
+<body>
+
+    <h1>FitBuddy 🏋️</h1>
+
+    <p>Your Personal Fitness & Nutrition Companion</p>
+
+    <form action="/result" method="post">
+
+        <label>Name</label><br>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label>Age</label><br>
+        <input type="number" name="age" placeholder="Enter your age" required>
+        <br><br>
+
+        <label>Height (cm)</label><br>
+        <input type="number" name="height" placeholder="Enter your height" required>
+        <br><br>
+
+        <label>Weight (kg)</label><br>
+        <input type="number" name="weight" placeholder="Enter your weight" required>
+        <br><br>
+
+        <label>Fitness Goal</label><br>
+        <select name="goal" required>
+            <option value="">Select your goal</option>
+            <option value="weight_loss">Weight Loss</option>
+            <option value="weight_gain">Weight Gain</option>
+            <option value="muscle_gain">Muscle Gain</option>
+            <option value="general_fitness">General Fitness</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Generate My Plan</button>
+
+    </form>
+
+</body>
+</html>

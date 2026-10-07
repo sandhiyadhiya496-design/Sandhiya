@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy - Your Plan</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f7f5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .header {
+            background: #2e7d32;
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            margin-top: 20px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+        }
+
+        h2 {
+            color: #2e7d32;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .detail {
+            background: #f2f7f5;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .plan {
+            line-height: 1.8;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            text-decoration: none;
+            background: #2e7d32;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🏋️ FITBUDDY</h1>
+        <p>Your Personal Fitness & Nutrition Companion</p>
+    </div>
+
+    <div class="card">
+        <h2>Hello, {{ name }}! 👋</h2>
+        <p>Here is your personalized fitness information.</p>
+
+        <div class="details">
+            <div class="detail">
+                <b>Age</b><br>
+                {{ age }} years
+            </div>
+
+            <div class="detail">
+                <b>Height</b><br>
+                {{ height }} cm
+            </div>
+
+            <div class="detail">
+                <b>Weight</b><br>
+                {{ weight }} kg
+            </div>
+
+            <div class="detail">
+                <b>Goal</b><br>
+                {{ goal }}
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>💪 Workout Plan</h2>
+
+        <div class="plan">
+            <p><b>Monday:</b> Full Body Workout</p>
+            <p><b>Tuesday:</b> Light Cardio</p>
+            <p><b>Wednesday:</b> Rest Day</p>
+            <p><b>Thursday:</b> Strength Training</p>
+            <p><b>Friday:</b> Full Body Workout</p>
+            <p><b>Saturday:</b> Light Cardio</p>
+            <p><b>Sunday:</b> Rest & Recovery</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🥗 Nutrition Plan</h2>
+
+        <div class="plan">
+            <p><b>Breakfast:</b> Balanced meal with protein and carbohydrates</p>
+            <p><b>Lunch:</b> Rice/roti with vegetables and protein</p>
+            <p><b>Snack:</b> Fruit or other nutritious snack</p>
+            <p><b>Dinner:</b> Balanced meal with protein and vegetables</p>
+            <p><b>Water:</b> Stay hydrated throughout the day</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>✨ Stay Consistent!</h2>
+        <p>Your fitness journey starts with small, consistent steps.</p>
+    </div>
+
+    <a class="back" href="/">
+        ← Back to FitBuddy
+    </a>
+
+</div>
+
+</body>
+</html>
